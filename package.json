@@ -1,0 +1,32 @@
+{
+  "name": "double-entry-bookkeeping-service",
+  "version": "1.0.0",
+  "description": "a simple double-entry bookkeeping app using Express.js and dwij-simple-orm",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "start-init": "cross-env NODE_ENV=production node app.js",
+    "dev": "cross-env NODE_ENV=development nodemon app.js",
+    "test-dev": "cross-env NODE_ENV=test nodemon app.js",
+    "test": "cross-env NODE_ENV=test jest --detectOpenHandles --runInBand"
+  },
+  "keywords": [],
+  "author": "Dwi Julianto",
+  "license": "ISC",
+  "dependencies": {
+    "dwij-simple-orm": "^1.2.8",
+    "pg": "^8.12.0",
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.6",
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.4"
+  }
+}
