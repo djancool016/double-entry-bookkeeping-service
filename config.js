@@ -37,6 +37,7 @@ const config = {
         queue_limit: process.env.POOL_QUEUE_LIMIT,
     },
     db_system: process.env.DB_SYSTEM,
+    loging : process.env.CONSOLE_LOG === '1',
     truncating: process.env.TRUNCATING === '1',
     migrating: process.env.MIGRATING === '1',
     seeding: process.env.SEEDING === '1'

@@ -9,7 +9,7 @@ module.exports = {
             autoIncrement: true
         },
         {
-            columnName: "registerId",
+            columnName: "register_id",
             dataType: "INT",
             nullable: false,
             references: {table: 'register', key: 'id'}
