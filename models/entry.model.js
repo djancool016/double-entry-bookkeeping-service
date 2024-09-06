@@ -10,8 +10,6 @@ const migrations = {
 
 const model = modelMapper('entry', migrations, {})
 
-console.log(JSON.stringify(model, null, 4))
-
 class EntryModel extends Model{
     constructor(){
         super(pool, model, builder)
