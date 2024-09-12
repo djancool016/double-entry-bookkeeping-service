@@ -1,12 +1,9 @@
 const config = require('../config')
 const {Model, builder, poolManager, modelMapper} = require('dwij-simple-orm').init(config)
 const pool = poolManager.connect()
+const migrations = require('../migrations/migrations')
 
-const migrations = {
-    trasaction: require('../migrations/202407221351-create-transaction')
-}
-
-const model = modelMapper('trasaction', migrations, {})
+const model = modelMapper('transaction', migrations, {})
 
 class TransactionModel extends Model{
     constructor(){
