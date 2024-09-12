@@ -5,6 +5,13 @@ const Model = require('../../models/transaction.model')
 const basicTestCases = require('./basicTestCases')
 
 const testCases = basicTestCases({id: 9876, register_id: 1, date: "2022-04-20", amount: 0, description: "Test Insert New Transaction"})
+testCases['sum'] = [
+    {
+        input: {sum:['amount']},
+        output: {data: [{total_transaction_amount: "random string"}]},
+        description: 'returning sum of amount'
+    }
+]
 
 const testModule = new Model()
 
