@@ -4,7 +4,7 @@ const pool = poolManager.connect()
 const Model = require('../../models/account.model')
 const basicTestCases = require('./basicTestCases')
 
-const testCases = basicTestCases({id: 9876, description: 'New Account'})
+const testCases = basicTestCases({id: 9876, type: 2, description: 'New Account'})
 
 const testModule = new Model()
 

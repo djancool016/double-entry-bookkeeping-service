@@ -4,7 +4,7 @@ const pool = poolManager.connect()
 const controller = require('../../controllers/coa.controller')
 const basicTestCases = require('./basicTestCases')
 
-const testCases = basicTestCases({body: {id: 9876, account_id: 1, base_value: 1000, code: 9000, description: 'New Account'}})
+const testCases = basicTestCases({body: {id: 9876, account_id: 1, code: 9000, description: 'New Account'}})
 
 const testModule = () => {
     const res = {}

@@ -21,11 +21,6 @@ module.exports = {
             unique: true
         },
         {
-            columnName: "base_value",
-            dataType: "INT",
-            nullable: false
-        },
-        {
             columnName: "description",
             dataType: "VARCHAR(255)",
             nullable: false

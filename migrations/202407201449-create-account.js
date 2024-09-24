@@ -9,6 +9,11 @@ module.exports = {
             autoIncrement: true
         },
         {
+            columnName: "type",
+            dataType: "INT",
+            nullable: false,
+        },
+        {
             columnName: "description",
             dataType: "VARCHAR(255)",
             nullable: false

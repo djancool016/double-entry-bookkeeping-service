@@ -1,7 +1,7 @@
 const config = require('../../config')
 const {poolManager, UnitTestFramework} = require('dwij-simple-orm').init(config)
 const pool = poolManager.connect()
-const Model = require('../../models/account.model')
+const Model = require('../../models/register.model')
 const basicTestCases = require('./basicTestCases')
 
 const testCases = basicTestCases({id: 9876, description: 'New Account'})

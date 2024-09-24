@@ -6,6 +6,14 @@ const basicTestCases = require('./basicTestCases')
 
 const testCases = basicTestCases({body: {id: 9876, register_id: 1, date: "2022-04-20", amount: 0, description: "Test Insert New Transaction"}})
 
+testCases['getReport'] = [
+    {
+        input: {body: {date_end: "2023-01-31"}},
+        output: {result: {httpCode: 200}},
+        description: 'Should returning report group by Coa'
+    }
+]
+
 const testModule = () => {
     const res = {}
     const next = (req) => () => req
@@ -15,7 +23,8 @@ const testModule = () => {
         create: (req) => test('create', req),
         read: (req) => test('read', req),
         update: (req) => test('update', req),
-        delete: (req) => test('destroy', req)
+        delete: (req) => test('destroy', req),
+        getReport: (req) => test('getReport', req)
     }
 }
 

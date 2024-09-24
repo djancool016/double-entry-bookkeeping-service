@@ -4,7 +4,7 @@ const pool = poolManager.connect()
 const controller = require('../../controllers/account.controller')
 const basicTestCases = require('./basicTestCases')
 
-const testCases = basicTestCases({body: {id: 9876, description: 'New Account'}})
+const testCases = basicTestCases({body: {id: 9876, type: 2, description: 'New Account'}})
 
 const testModule = () => {
     const res = {}

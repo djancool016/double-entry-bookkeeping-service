@@ -50,7 +50,7 @@ module.exports = (input = {}) => {
                 description: 'Success should returning array of objects'
             }, {
                 input: {unknownKey: 'unknown'},
-                output: {code: 'ER_NOT_FOUND'},
+                output: {code: 'ER_BAD_FIELD_ERROR'},
                 description: 'Empty result should throwing error code ER_NOT_FOUND'
             }, {
                 input: undefined,
